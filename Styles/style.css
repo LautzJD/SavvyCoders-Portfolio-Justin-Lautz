@@ -28,7 +28,17 @@ ol {
 
 li {
     color: rgb(129, 96, 247);
-}
+    display: inline;
+    /* puts all list items inline */
+    }
+
+    /* li:first-child {
+        margin-right: 50px;
+    } */
+
+    /* li:first-of-type {
+        margin-right: 200px;
+    } */
 
 .tomatofy {
 color: tomato;
@@ -48,7 +58,8 @@ background-color: brown
 }
 
 .container {
-    /* width: 800px; */
+    width: 800px;
     margin: 0 auto;
     /* margin topbottom "0" leftright "auto" */
+    /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
 }
