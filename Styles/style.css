@@ -1,0 +1,39 @@
+h1 {
+    background-color: aqua;
+    color: tomato;
+}
+
+h2 {
+    background-color: aliceblue;
+    color: blue;
+}
+
+h3 {
+    background-color: aquamarine;
+    color: black;
+}
+
+ol {
+    color: hotpink
+}
+
+li {
+    color: rgb(129, 96, 247);
+}
+
+.tomatofy {
+color: tomato;
+}
+
+.pinkafy {
+color: pink;
+}
+
+.bluify {
+color: blue;
+background-color: black;
+}
+
+#content {
+background-color: brown
+}
