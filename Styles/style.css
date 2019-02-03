@@ -1,19 +1,20 @@
-
 h1 {
     background-color: aqua;
     color: tomato;
     /* margin-left: 10px; */
     /* padding-top: 150px; */
     /* margin top right bottom left; */
-    margin: 50px 60px 50px 60px;
+    margin: 100px 60px 50px 60px;
+    border: 5px solid coral;
+    padding: 5px;
 }
 
 h2 {
-    background-color: aliceblue;
-    color: blue;
+    background-color: blueviolet;
+    color: red;
     /* padding: top left-right bottom */
-    padding: 30px 60px 100px;
-    height: 100px;
+    padding: 30px 60px 30px;
+    height: 60px;
     width: 200px;
 }
 
@@ -22,44 +23,50 @@ h3 {
     color: black;
 }
 
-ol {
-    color: hotpink
+li {
+    display: inline;
+    color: black;
+    /* puts all list items inline */
 }
 
-li {
-    color: rgb(129, 96, 247);
-    display: inline;
-    /* puts all list items inline */
-    }
-
-    /* li:first-child {
+/* li:first-child {
         margin-right: 50px;
     } */
 
-    /* li:first-of-type {
+/* li:first-of-type {
         margin-right: 200px;
     } */
 
 .tomatofy {
-color: tomato;
+    color: tomato;
 }
 
 .pinkafy {
-color: pink;
+    color: pink;
 }
 
 .bluify {
-color: blue;
-background-color: black;
-}
-
-#content {
-background-color: brown
+    color: blue;
+    background-color: aqua
 }
 
 .container {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
+    background: antiquewhite;
     /* margin topbottom "0" leftright "auto" */
     /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
+}
+
+#navigation {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#content {
+    background-color: wheat;
+    color: black;
+    width: 600px;
+    margin: 0% auto;
+    border: 3px dotted red;
 }
