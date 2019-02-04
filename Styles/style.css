@@ -50,7 +50,7 @@ li {
     background-color: aqua
 }
 
-.container {
+.container1 {
     width: 1000px;
     margin: 0 auto;
     background: antiquewhite;
@@ -58,12 +58,30 @@ li {
     /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
 }
 
-#navigation {
+#navigation1 {}
+
+#header1 {}
+
+#content1 {}
+
+#footer1 {}
+
+/*Blog CSS Styles Below*/
+
+.container2 {
+    width: 1000px;
+    margin: 0 auto;
+    background: antiquewhite;
+    /* margin topbottom "0" leftright "auto" */
+    /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
+}
+
+#navigation2 {
     width: 600px;
     margin: 0 auto;
 }
 
-#content {
+#content2 {
     background-color: wheat;
     color: black;
     width: 600px;
