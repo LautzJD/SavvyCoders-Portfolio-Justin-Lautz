@@ -53,15 +53,15 @@ li {
 }
 
 .container1 {
-    width: 1000px;
     margin: 0 auto;
     background: antiquewhite;
-    border: 2px solid red
     /* margin topbottom "0" leftright "auto" */
     /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
 }
 
-#navigation1 {}
+#navigation1 {
+
+}
 
 #header1 {
     
@@ -95,6 +95,7 @@ li {
     width: 600px;
     margin: 0 auto;
     background: lightcyan;
+    text-transform: uppercase;
 }
 
 #content2 {
@@ -116,11 +117,37 @@ li > p {
 /* > means decendent selector, selects all P's under Li*/
 
 li:hover {
-    background: lightgoldenrodyellow;
+    background: rgb(67, 253, 10);
 }
+
+/* p:hover {
+    background: rgb(67, 253, 10);
+
+} */
 /*changes the background color when hovering cursor*/
 
-div {
+/*div {
     background: chartreuse;
+    color: blue;
 }
 /*Div is an element! easy to overwrite!*/
+
+/*Contact CSS*/
+
+#container3 {
+    width: 1000px;
+    margin: 0 auto;
+    background: antiquewhite;
+}
+
+#navigation3 {
+
+}
+
+#header3 {
+
+}
+
+#footer3 {
+
+}
