@@ -94,6 +94,7 @@ li {
 #navigation2 {
     width: 600px;
     margin: 0 auto;
+    background: lightcyan;
 }
 
 #content2 {
@@ -115,5 +116,11 @@ li > p {
 /* > means decendent selector, selects all P's under Li*/
 
 li:hover {
-    background: red;
+    background: lightgoldenrodyellow;
 }
+/*changes the background color when hovering cursor*/
+
+div {
+    background: chartreuse;
+}
+/*Div is an element! easy to overwrite!*/
