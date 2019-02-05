@@ -7,6 +7,7 @@ h1 {
     margin: 100px 60px 50px 60px;
     border: 5px solid coral;
     padding: 5px;
+    border-radius: 5px;
 }
 
 h2 {
@@ -47,24 +48,38 @@ li {
 
 .bluify {
     color: blue;
-    background-color: aqua
+    background-color: rgb(193, 214, 214);
+    border: 2px solid red;
 }
 
 .container1 {
     width: 1000px;
     margin: 0 auto;
     background: antiquewhite;
+    border: 2px solid red
     /* margin topbottom "0" leftright "auto" */
     /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
 }
 
 #navigation1 {}
 
-#header1 {}
+#header1 {
+    
+}
 
-#content1 {}
+#content1 {
+    color: blue;
+}
 
-#footer1 {}
+#footer1 {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+}
+
+.flt-rht {
+    float: right;
+}
 
 /*Blog CSS Styles Below*/
 
@@ -87,4 +102,18 @@ li {
     width: 600px;
     margin: 0% auto;
     border: 3px dotted red;
+}
+
+figure ~ p {
+    color: hotpink;
+}
+/*~ means general sibling selector, applys style to both*/
+
+li > p {
+    color:blue;
+}
+/* > means decendent selector, selects all P's under Li*/
+
+li:hover {
+    background: red;
 }
