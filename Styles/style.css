@@ -1,16 +1,18 @@
-h1 {
-    background-color: aqua;
+/*h1*/ {
+    /*background-color: aqua;
     color: tomato;
     /* margin-left: 10px; */
     /* padding-top: 150px; */
     /* margin top right bottom left; */
-    margin: 100px 60px 50px 60px;
-    border: 5px solid coral;
+    margin: 0 auto;
+    border: 5px solid white;
     padding: 5px;
     border-radius: 5px;
-}
+    background: rgb(104, 13, 156);
+    text-align: center; 
+} 
 
-h2 {
+/*h2*/ {
     background-color: blueviolet;
     color: red;
     /* padding: top left-right bottom */
@@ -19,16 +21,22 @@ h2 {
     width: 200px;
 }
 
-h3 {
+/*h3*/ {
     background-color: aquamarine;
     color: black;
 }
 
 li {
+    color:black;
     display: inline;
-    color: black;
+    
     /* puts all list items inline */
 }
+
+li:hover {
+    background: rgb(104, 13, 156);
+}
+
 
 /* li:first-child {
         margin-right: 50px;
@@ -52,58 +60,47 @@ li {
     border: 2px solid red;
 }
 
-.container1 {
-    margin: 0 auto;
-    background: antiquewhite;
+.container {
+    width: 1500px;
+    background: rgb(122, 115, 115);
+    border: 2px solid rgb(146, 139, 139);
     /* margin topbottom "0" leftright "auto" */
     /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
 }
 
-#navigation1 {
-
-}
-
-#header1 {
+#navigation {
     
 }
 
-#content1 {
-    color: blue;
-}
-
-#footer1 {
-    background-color: aqua;
-    color: black;
-    text-align: center;
-}
-
-.flt-rht {
-    float: right;
-}
-
-/*Blog CSS Styles Below*/
-
-.container2 {
-    width: 1000px;
+#header {
     margin: 0 auto;
-    background: antiquewhite;
-    /* margin topbottom "0" leftright "auto" */
-    /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
+    border: 5px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgb(104, 13, 156);
+    text-align: center;     
 }
 
-#navigation2 {
-    width: 600px;
-    margin: 0 auto;
-    background: lightcyan;
-    text-transform: uppercase;
+#content {
+    padding: 10px 50px 10px 70px;
 }
 
 #content2 {
     background-color: wheat;
     color: black;
     width: 600px;
-    margin: 0% auto;
-    border: 3px dotted red;
+    margin: 10px auto;
+    border: 2px dotted red;
+    padding: 8px 5px 8px 5px;
+}
+
+#footer {
+    color:rgb(104, 13, 156);
+    text-align: center;
+}
+
+.flt-rht {
+    float: right;
 }
 
 figure ~ p {
@@ -116,10 +113,6 @@ li > p {
 }
 /* > means decendent selector, selects all P's under Li*/
 
-li:hover {
-    background: rgb(67, 253, 10);
-}
-
 /* p:hover {
     background: rgb(67, 253, 10);
 
@@ -131,23 +124,3 @@ li:hover {
     color: blue;
 }
 /*Div is an element! easy to overwrite!*/
-
-/*Contact CSS*/
-
-#container3 {
-    width: 1000px;
-    margin: 0 auto;
-    background: antiquewhite;
-}
-
-#navigation3 {
-
-}
-
-#header3 {
-
-}
-
-#footer3 {
-
-}
