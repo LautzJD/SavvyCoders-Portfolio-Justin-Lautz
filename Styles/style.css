@@ -9,10 +9,12 @@
     padding: 5px;
     border-radius: 5px;
     background: rgb(104, 13, 156);
-    text-align: center; 
-} 
+    text-align: center;
+}
 
-/*h2*/ {
+/*h2*/
+
+    {
     background-color: blueviolet;
     color: red;
     /* padding: top left-right bottom */
@@ -21,22 +23,45 @@
     width: 200px;
 }
 
-/*h3*/ {
+/*h3
+    {
     background-color: aquamarine;
     color: black;
+} */
+
+#navigation > ul {
+    display: inline;
 }
 
-li {
-    color:black;
+#navigation>ul>li {
     display: inline;
-    
+    position: relative;
     /* puts all list items inline */
+    /* > = direct decendents*/
+}
+
+#navigation>ul>li>ul {
+   position: absolute;
+    background-color: rgb(151, 148, 151);
+    display: none;
+    width: 83px;
+    top: 17px;
+    left: -30px;
+    list-style: none;
+}
+/*position absolute moves with page*/
+
+#navigation>ul>li:hover>ul {
+    display: block;
 }
 
 li:hover {
     background: rgb(104, 13, 156);
 }
 
+body {
+    background-color: rgb(122, 115, 115);
+}
 
 /* li:first-child {
         margin-right: 50px;
@@ -50,18 +75,9 @@ li:hover {
     color: tomato;
 }
 
-.pinkafy {
-    color: pink;
-}
-
-.bluify {
-    color: blue;
-    background-color: rgb(193, 214, 214);
-    border: 2px solid red;
-}
-
 .container {
-    width: 1500px;
+    width: 1210px;
+    margin: auto;
     background: rgb(122, 115, 115);
     border: 2px solid rgb(146, 139, 139);
     /* margin topbottom "0" leftright "auto" */
@@ -69,16 +85,20 @@ li:hover {
 }
 
 #navigation {
-    
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    height: 90px;
 }
+/*position fixed allows nav contents to scroll w/page*/
 
 #header {
-    margin: 0 auto;
     border: 5px solid white;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 14px;
+    border-radius: 10px;
     background: rgb(104, 13, 156);
-    text-align: center;     
+    text-align: center;
+    margin: 100px auto;
 }
 
 #content {
@@ -88,39 +108,51 @@ li:hover {
 #content2 {
     background-color: wheat;
     color: black;
-    width: 600px;
+    width: 700px;
     margin: 10px auto;
     border: 2px dotted red;
     padding: 8px 5px 8px 5px;
 }
 
 #footer {
-    color:rgb(104, 13, 156);
+    color: rgb(104, 13, 156);
     text-align: center;
 }
 
-.flt-rht {
+.flt-rht  {
+    display: inline;
     float: right;
+    padding-right: 40px;
+    
+}
+.flt-rht > img {
+    height: 90px;
+    display: inline;
 }
 
-figure ~ p {
-    color: hotpink;
+figure~p {
+    color: black;
 }
+
+.schedule {}
+
 /*~ means general sibling selector, applys style to both*/
 
-li > p {
-    color:blue;
+li>p {
+    color: blue;
 }
-/* > means decendent selector, selects all P's under Li*/
+
+/* > means directdecendent selector, selects all P's under Li*/
 
 /* p:hover {
     background: rgb(67, 253, 10);
-
 } */
+
 /*changes the background color when hovering cursor*/
 
 /*div {
     background: chartreuse;
     color: blue;
 }
+
 /*Div is an element! easy to overwrite!*/
