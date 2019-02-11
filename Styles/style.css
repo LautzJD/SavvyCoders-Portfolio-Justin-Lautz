@@ -12,6 +12,10 @@
     text-align: center;
 } */
 
+h1 {
+    font-family: syncopate, serif;
+}
+
 /* h2  {
     background-color: blueviolet;
     color: red;
@@ -26,6 +30,10 @@
     background-color: aquamarine;
     color: black;
 } */
+
+h3 {
+    font-family: anton, serif;
+}
 
 #navigation>ul {
     display: flex;
@@ -52,12 +60,12 @@
 
 /*position absolute moves with page*/
 
-#navigation>ul>li:hover>ul {
+#navigation>ul>li:hover>ul { 
     display: block;
 }
 
 li:hover {
-    background: rgb(104, 13, 156);
+    background: rgb(92, 49, 117);
 }
 
 img {
@@ -86,7 +94,6 @@ body {
 }
 
 .container {
-    max-width: 1210px;
     margin: auto;
     background: rgb(122, 115, 115);
     border: 2px solid rgb(146, 139, 139);
@@ -101,15 +108,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(146, 139, 139);
 }
 
-/*position fixed allows nav contents to scroll w/page*/
+/*position fixed or Sticky allows nav contents to scroll w/page*/
 
 #header {
     border: 5px solid white;
-    /*padding: 14px;*/
+    padding: 14px;
     border-radius: 10px;
-    background: rgb(104, 13, 156);
+    background: rgb(92, 49, 117);
     text-align: center;
     grid-area: header;
 }
@@ -118,17 +126,26 @@ body {
     padding: 10px 50px 10px 70px;
 }
 
-#content2 {
-    background-color: wheat;
-    color: black;
-    max-width: 700px;
+#contentBlog {
+    background-color: rgb(138, 136, 136);
     margin: 10px auto;
-    border: 12px dotted red;
-    padding: 8px 5px 8px 5px;
+    border: 12px dotted rgb(92, 49, 117);
+    padding: 5px 25px 5px 25px;
+}
+
+#contentContact form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 600px;
+    border: 12px dotted rgb(92, 49, 117);
+}
+
+#contentContact form input {
+    margin: 5px;
 }
 
 #footer {
-    color: rgb(104, 13, 156);
+    color: rgb(92, 49, 117);
     text-align: center;
     grid-area: footer;
 }
@@ -153,7 +170,11 @@ figure~p {
 /*~ means general sibling selector, applys style to both*/
 
 li>p {
-    color: blue;
+    color: rgb(92, 49, 117);
+}
+
+#contentBlog p {
+    color: rgb(92, 49, 117);
 }
 
 /* > means directdecendent selector, selects all P's under Li*/
@@ -180,7 +201,7 @@ li>p {
     body {
         grid-template-areas: "navigation  header" "navigation  content" "navigation  footer";
         grid-template-rows: min-content auto min-content;
-        grid-template-columns: minmax(min-content, 15vw) auto;
+        grid-template-columns: minmax(min-content, 12vw) auto;
     }
 
     #navigation {
