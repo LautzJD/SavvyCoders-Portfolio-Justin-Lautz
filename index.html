@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Justin's Savvy Coders Portfolio Page</title>
-
-    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-
+    <link rel="stylesheet" href="Styles/style.css">
 
 </head>
 
@@ -33,7 +34,7 @@
 
         </ul>
 
-        <div class="flt-rht">
+        <div>
             <img src="https://dk1xgl0d43mu1.cloudfront.net/user_files/tracknight/site_assets/000/005/738/original.png?1423621370"
                 alt="SCCA Logo">
 
@@ -105,10 +106,32 @@
     <div id="footer">
 
         <H2>Contact me</H2>
-
+        <i class="fab fa-facebook"></i>
         <a href="https://www.facebook.com/lautzjd?ref=bookmarks">Facebook</a>
+        <i class="fab fa-google"></i>
         <a href="lautzjd@gmail.com">Email</a>
+        <i class="fab fa-github"></i>
         <a href="https://github.com/LautzJD">Github</a>
+
+        <script>
+            /*var name = window.prompt("What's your name");
+            window.alert (`Why hello there ${name}`);*/
+
+            /*document.getElementById("navigation").textContent = "Good Night World";*/
+
+            /*console.log(document.querySelector("#header h1"));
+            console.log(document.querySelector("#footer h2"));
+            document.querySelector("#navigation>ul>li:nth-child(1)").innerHTML = "<a href='https://google.com'>Google</a>";
+            document.querySelector("#navigation>ul>li:nth-child(2)").textContent = "I am now changed";*/
+            /*nth-child(2) selects the second list item! .innerHTML allows you to link something*/
+
+            var name = window.prompt("What's your name?");
+
+            document.querySelector("#header h1").textContent = `Why hello there ${name}`;
+
+        </script>
+
+
 
     </div>
 
