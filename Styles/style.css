@@ -111,6 +111,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(146, 139, 139);
+    background-image: url(https://cdn4.vectorstock.com/i/1000x1000/72/03/checkered-flag-background-vector-5627203.jpg)
 }
 
 /*position fixed or Sticky allows nav contents to scroll w/page*/
