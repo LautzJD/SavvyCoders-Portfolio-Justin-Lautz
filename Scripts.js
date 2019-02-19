@@ -1,3 +1,4 @@
+/* eslint-disable vars-on-top */
 /* var name = window.prompt("What's your name");
 window.alert (`Why hello there ${name}`);*/
 
@@ -11,16 +12,19 @@ document.querySelector("#navigation>ul>li:nth-child(1)").innerHTML = "<a href='h
 document.querySelector("#navigation>ul>li:nth-child(2)").textContent = "I am now changed";*/
 /* nth-child(2) selects the second list item! .innerHTML allows you to link something*/
 
+var name;
 
-var nameChecker = function nameChecker(){
-    var name = window.prompt("What's your name?");
-
+var blankChecker = function blankChecker(){
     if(name === ''){
         name = window.prompt("Seriously, what's your name?");
+        blankChecker(); /* RECURSION*/
     }
-    else{
-        document.querySelector('#header h1').textContent = `Why hello there ${name}`;
-    }
+};
+
+var nameChecker = function nameChecker(){
+    name = window.prompt("What's your name?");
+    blankChecker();
+    document.querySelector('#header h2').textContent = `Welcome ${name}`;
 };
 
 nameChecker();

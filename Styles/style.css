@@ -12,8 +12,12 @@
     text-align: center;
 } */
 
-h1 {
+h1, h2 {
     font-family: syncopate, serif;
+}
+
+#navigation a {
+    color: white;
 }
 
 /* h2  {
@@ -70,8 +74,8 @@ li:hover {
 }
 
 img {
-    max-width: 100%;
-    border: 4px solid rgb(92, 49, 117);
+    max-width: 92%;
+    border: 3px solid rgb(92, 49, 117);
 }
 
 body {
@@ -111,8 +115,9 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(146, 139, 139);
-    background-image: url(https://cdn4.vectorstock.com/i/1000x1000/72/03/checkered-flag-background-vector-5627203.jpg)
-}
+    background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/um3ALg5/internet-binary-data-highway-blue-10839_4jfxamjq__F0000.png);
+
+    }
 
 /*position fixed or Sticky allows nav contents to scroll w/page*/
 
