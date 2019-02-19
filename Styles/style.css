@@ -16,10 +16,6 @@ h1, h2 {
     font-family: syncopate, serif;
 }
 
-#navigation a {
-    color: white;
-}
-
 /* h2  {
     background-color: blueviolet;
     color: red;
@@ -39,74 +35,6 @@ h3 {
     font-family: anton, serif;
 }
 
-#navigation>ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: space-around;
-    line-height: 20px;
-}
-
-#navigation>ul>li {
-    position: relative;
-    /* puts all list items inline */
-    /* > = direct decendents*/
-}
-
-#navigation>ul>li>ul {
-    position: absolute;
-    background-color: rgb(151, 148, 151);
-    display: none;
-    width: 83px;
-    top: 17px;
-    left: -30px;
-    list-style: none;
-}
-
-/*position absolute moves with page*/
-
-#navigation>ul>li:hover>ul { 
-    display: block;
-}
-
-li:hover {
-    background: rgb(92, 49, 117);
-}
-
-img {
-    max-width: 92%;
-    border: 3px solid rgb(92, 49, 117);
-}
-
-body {
-    background-color: rgb(122, 115, 115);
-    display: grid;
-    /*max-content set to "content*/
-    min-height: 100vh;
-    grid-template-areas: "navigation" "header" "content" "footer";
-    grid-template-rows: min-content min-content auto min-content;
-}
-
-/* li:first-child {
-        margin-right: 50px;
-    } */
-
-/* li:first-of-type {
-        margin-right: 200px;
-    } */
-
-.tomatofy {
-    color: tomato;
-}
-
-.container {
-    margin: auto;
-    background: rgb(122, 115, 115);
-    border: 2px solid rgb(146, 139, 139);
-    /* margin topbottom "0" leftright "auto" */
-    /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
-}
-
 #navigation {
     position: sticky;
     top: 0;
@@ -121,11 +49,83 @@ body {
 
 /*position fixed or Sticky allows nav contents to scroll w/page*/
 
+#navigation a {
+    color: white;
+}
+
+#navigation>ul {
+display: flex;
+list-style: none;
+width: 100%;
+justify-content: space-around;
+line-height: 20px;
+}    
+
+#navigation>ul>li {
+    position: relative;
+    /* puts all list items inline */
+    /* > = direct decendents*/
+}    
+
+#navigation>ul>li>ul {
+    position: absolute;
+    background-color: rgb(151, 148, 151);
+    display: none;
+    width: 83px;
+    top: 17px;
+    left: -30px;
+    list-style: none;
+}    
+
+/*position absolute moves with page*/
+
+#navigation>ul>li:hover>ul { 
+    display: block;
+}    
+
+li:hover {
+    background: rgb(92, 49, 117);
+}    
+
+img {
+    max-width: 92%;
+    border: 3px solid rgb(92, 49, 117);
+}    
+
+body {
+    background-color: rgb(122, 115, 115);
+    display: grid;
+    /*max-content set to "content*/
+    min-height: 100vh;
+    grid-template-areas: "navigation" "header" "content" "footer";
+    grid-template-rows: min-content min-content auto min-content;
+}    
+
+/* li:first-child {
+        margin-right: 50px;
+    } */    
+
+/* li:first-of-type {
+        margin-right: 200px;
+    } */    
+
+.tomatofy {
+    color: tomato;
+}    
+
+.container {
+    margin: auto;
+    border: 2px solid rgb(146, 139, 139);
+    background-color: rgb(92, 49, 117); 
+    /* margin topbottom "0" leftright "auto" */
+    /* MUST HAVE A WIDTH OR HEIGHT SET FOR AUTO TO WORK */
+}    
+
+
 #header {
     border: 5px solid white;
     padding: 14px;
     border-radius: 10px;
-    background: rgb(92, 49, 117);
     text-align: center;
     grid-area: header;
 }

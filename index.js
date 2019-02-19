@@ -12,6 +12,21 @@ document.querySelector("#navigation>ul>li:nth-child(1)").innerHTML = "<a href='h
 document.querySelector("#navigation>ul>li:nth-child(2)").textContent = "I am now changed";*/
 /* nth-child(2) selects the second list item! .innerHTML allows you to link something*/
 
+import Navigation from './src/Navigation';
+import Header from './src/Header';
+import Content from './src/Content';
+import Footer from './src/Footer';
+
+var originalContent = document.body.innerHTML;
+
+document.body.innerHTML = `
+${Navigation}
+${Header}
+${Content}
+${Footer}
+${originalContent}
+`;
+
 var name;
 
 var blankChecker = function blankChecker(){
@@ -23,8 +38,11 @@ var blankChecker = function blankChecker(){
 
 var nameChecker = function nameChecker(){
     name = window.prompt("What's your name?");
-    blankChecker();
+
+    blankChecker(); /* BlockingCode*/
+
     document.querySelector('#header h2').textContent = `Welcome ${name}`;
 };
+
 
 nameChecker();
