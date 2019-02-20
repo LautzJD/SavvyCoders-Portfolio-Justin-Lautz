@@ -1,5 +1,9 @@
-export default `
+export default function Navigation(title){
+    return `
 <div id="navigation">
+
+<h1>${title}</h1>
+
 <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="blog/">Blog</a></li>
@@ -21,3 +25,4 @@ export default `
 
 </div>
 `;
+}

@@ -21,8 +21,8 @@ import nameChecker from './src/Greeter';
 var root = document.querySelector('#root');
 
 root.innerHTML = `
-${Navigation}
-${Header}
+${Navigation('Nav Bar')}
+${Header('Portfolio page of Justin D. Lautz')}
 ${Content}
 ${Footer}
 `;
