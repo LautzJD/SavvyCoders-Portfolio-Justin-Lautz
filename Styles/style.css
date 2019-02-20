@@ -96,7 +96,7 @@ li:hover {
     max-width: 25%;
 }
 
-body {
+#root {
     background-color: rgb(122, 115, 115);
     display: grid;
     /*max-content set to "content*/
@@ -210,7 +210,7 @@ li>p {
 }
 
 @media(min-width: 800px) {
-    body {
+    #root {
         grid-template-areas: "navigation  header" "navigation  content" "navigation  footer";
         grid-template-rows: min-content auto min-content;
         grid-template-columns: minmax(min-content, 12vw) auto;
