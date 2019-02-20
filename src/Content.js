@@ -1,12 +1,13 @@
 export default `
 <div id="content">
 <div>
-    <img src="https://lh3.googleusercontent.com/g55RbVAGGAyrR5q-xNfF5IVx3AaMtOzhI5HV1ZQsi8vNs7Rg87zqKNYovBO1OyVydtW39cQ4jfKGbCVTFsaO2N2llC7LGdvNLcwF27fHYBeJiVkKpuVeMLMbTGCEqGxiDAcMqFxslI2y2mnSmwYBwfJvK2quqr4NoHQBVV2D5n2X92-nk-tsY3bZCJcy16nbp-wFic2lWylRfQgS3BNrc5iK4cHgAHQ1ZbGp4bm1TvgSxGA8SxLLY_L35jjl9EpKbRX3h4ooGnVGCGIjWnr6GyzHQpB-r9AjqrkipsSsAXbXzBrOSAnuaSRVm637uy574IYpGSQJlrGdUBwbIxMFF2B-5F7odTMGfQ7UysgrPwEtZN0rh5IEGs4r_wEisUR0xbOTa5kTwCcBfzUb1z4HuezIjliDiZWZviRupwv4EIkcQRsoEB4gy3AG7s0I58T-JgjcRPX8grNVAVu__b90iIaLgbUA3zhhN_dV5-32b1G0nSFF6MvktVEm4M42Nr_WRa7fhNCqXkW_sKJz34MMCkVauWujjxkEljRNilP4Iaary6LdYsAwBygA3SU8ruKD1iVdDcoSiuRJ6TQmSg90e4pOsYJbQN1-mYdIQLlCkDZJGS7xkxnqkv7LbIDlo2CfctEcK9px2wZfeEq7wJhaG2vsZX-Cakc=w1357-h904-no"
-        alt="SM at Gateway">
+
+    <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/37201573_10213743292708809_6614595406477131776_n.jpg?_nc_cat=105&_nc_oc=AQmdCwOG8sZ-NQTKwbA-tYJy4Y73-IByC6wSypnmJShMthkqTyxYRvKIQc0XeSoatxo&_nc_ht=scontent-ort2-2.xx&oh=5e152e22aeeb65b3f63c39e8cdd597a6&oe=5CEC5B8A"
+        alt="JDL HeadShot">
 
     <figure>
         <img src="https://i.embed.ly/1/image?url=https%3A%2F%2Fthumbs.gfycat.com%2FWhoppingBlueFlickertailsquirrel-size_restricted.gif&key=522baf40bd3911e08d854040d3dc5c07"
-            alt="Chimp">
+            alt="SMGif">
         <figcaption>Spec Miata or Spec Pinata?</figcaption>
     </figure>
 

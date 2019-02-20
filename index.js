@@ -16,6 +16,7 @@ import Navigation from './src/Navigation';
 import Header from './src/Header';
 import Content from './src/Content';
 import Footer from './src/Footer';
+import nameChecker from './src/Greeter';
 
 var originalContent = document.body.innerHTML;
 
@@ -26,23 +27,5 @@ ${Content}
 ${Footer}
 ${originalContent}
 `;
-
-var name;
-
-var blankChecker = function blankChecker(){
-    if(name === ''){
-        name = window.prompt("Seriously, what's your name?");
-        blankChecker(); /* RECURSION*/
-    }
-};
-
-var nameChecker = function nameChecker(){
-    name = window.prompt("What's your name?");
-
-    blankChecker(); /* BlockingCode*/
-
-    document.querySelector('#header h2').textContent = `Welcome ${name}`;
-};
-
 
 nameChecker();

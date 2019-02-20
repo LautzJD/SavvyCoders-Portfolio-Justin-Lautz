@@ -16,12 +16,8 @@ export default `
 
 </ul>
 
-<div>
-    <img src="https://i.pinimg.com/originals/e0/c1/7f/e0c17f52e48a1dc98a989c6701b526c5.jpg"
-        alt="SCCA Logo">
-
-</div>
-
+<img src="https://i.pinimg.com/originals/e0/c1/7f/e0c17f52e48a1dc98a989c6701b526c5.jpg"
+        alt="DNA Graphic">
 
 </div>
 `;

@@ -87,10 +87,14 @@ li:hover {
     background: rgb(92, 49, 117);
 }    
 
-img {
-    max-width: 92%;
+#navigation img {
+    max-width: 90%;
     border: 3px solid rgb(92, 49, 117);
-}    
+}
+
+#content img {
+    max-width: 25%;
+}
 
 body {
     background-color: rgb(122, 115, 115);
@@ -220,4 +224,5 @@ li>p {
     #navigation>ul {
         flex-direction: column;
     }
+   
 }
