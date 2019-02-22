@@ -178,7 +178,9 @@ figure~p {
     color: black;
 }
 
-.schedule {}
+.schedule {
+    text-align: start;
+}
 
 /*~ means general sibling selector, applys style to both*/
 

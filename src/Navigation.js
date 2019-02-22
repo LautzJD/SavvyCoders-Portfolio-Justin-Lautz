@@ -1,8 +1,8 @@
-export default function Navigation(title){
+export default function Navigation(){
     return `
 <div id="navigation">
 
-<h1>${title}</h1>
+<h1></h1>
 
 <ul>
     <li><a href="index.html">Home</a></li>
