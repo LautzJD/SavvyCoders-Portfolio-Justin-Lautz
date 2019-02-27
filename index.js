@@ -92,22 +92,23 @@ function render(state){
 
     links[0].addEventListener('click', function handleNavigation(event){
         event.preventDefault();
-        render(State.Home);
+        console.log(event.target.textContent); // Helpful for locating link//
+        render(State[event.target.textContent]); // Must use bracket notation to access an object dynamically//
     });
 
     links[1].addEventListener('click', function handleNavigation(event){
         event.preventDefault();
-        render(State.Blog);
+        render(State[event.target.textContent]);
     });
 
     links[2].addEventListener('click', function handleNavigation(event){
         event.preventDefault();
-        render(State.Contact);
+        render(State[event.target.textContent]);
     });
 
     links[3].addEventListener('click', function handleNavigation(event){
         event.preventDefault();
-        render(State.Projects);
+        render(State[event.target.textContent]);
     });
 }
 
