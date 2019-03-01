@@ -58,28 +58,42 @@ import Footer from './src/Footer';
 //     render(projects);
 // });
 
-//  REFACTORED INTO STATE   //
-
+//  REFACTORED INTO "STATE"   //
 var root = document.querySelector('#root');
 
-var State = {
-    'Home': {
-        'title': 'Portfolio Page of Justin D Lautz'
-    },
-    'Blog': {
-        'title': 'Welcome to my blog'
-    },
-    'Contact': {
-        'title': 'Welcome to my contact'
-    },
-    'Projects': {
-        'title': 'Welcome to my projects'
-    }
-};
+// Function decleration//
+function navHandler(event){
+    event.preventDefault();
+    render(State[event.target.textContent]); // Must use bracket notation to access an object dynamically//
+}
+
+// State holds infomatio the render function needs to render the page. This is a nested object//
+var State =
+    {
+        'Home': {
+            'links': [ 'Blog', 'Contact', 'Projects' ],
+            'title': 'Portfolio Page of Justin D Lautz'
+        },
+        'Blog': {
+            'links': [ 'Home', 'Contact','Projects' ],
+            'title': 'Welcome to my blog'
+        },
+        'Contact': {
+            'links': [ 'Home', 'Blog','Projects' ],
+            'title': 'Welcome to my contact'
+        },
+        'Projects': {
+            'links': [ 'Home', 'Contact','Blog' ],
+            'title': 'Welcome to my projects'
+        }
+    };
+// Grabs a state object and renders it into the page//
 
 function render(state){
     var links;
+    var i = 0;
 
+    // Grab each component and updates #root's HTML with the generated HTML that works with State//
     root.innerHTML = `
     ${Navigation(state)}
     ${Header(state.title)}
@@ -87,35 +101,24 @@ function render(state){
     ${Footer(state)}
     `;
 
-
     links = document.querySelectorAll('#navigation > ul > li >  a');
 
-    links[0].addEventListener('click', function handleNavigation(event){
-        event.preventDefault();
-        console.log(event.target.textContent); // Helpful for locating link//
-        render(State[event.target.textContent]); // Must use bracket notation to access an object dynamically//
-    });
-
-    links[1].addEventListener('click', function handleNavigation(event){
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
-
-    links[2].addEventListener('click', function handleNavigation(event){
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
-
-    links[3].addEventListener('click', function handleNavigation(event){
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
+    // run a while loop for as long as the length of links is//
+    while(i < links.length){
+        // change the index
+        links[i].addEventListener('click', navHandler);
+        // Grab the event object that is available from the browser//
+        // open up the Event Object and access the the target (What the source of the event was)//
+        // This will revel a DOM node (in this case an <a>) tag//
+        // Grab the textcontent inside of that <a> - this will be something like "home"
+        // Ise that string to access the thing we need from State Object defined above//
+        
+        i++;
+    }
 }
 
 render(State.Home);
 
 // create event handlers for each navigation link//
-// console log the nae of the link that was clicked//
-
 
 // nameChecker();
