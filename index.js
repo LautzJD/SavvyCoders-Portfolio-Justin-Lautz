@@ -16,7 +16,12 @@ import Navigation from './src/Navigation';
 import Header from './src/Header';
 import Content from './src/Content';
 import Footer from './src/Footer';
+import { startCase } from 'lodash';
+
+console.log(startCase);
+
 // import nameChecker from './src/Greeter';
+
 
 // var home = {
 //     'title': 'Portfolio page of Justin D. Lautz'
@@ -51,47 +56,53 @@ import Footer from './src/Footer';
 //     console.log(e.target.href);
 //     render(contact);
 // });
-
+    
 // document.querySelector('#navigation ul li:nth-child(4)').addEventListener('click', (e) => {
 //     e.preventDefault();
 //     console.log(e.target.href);
 //     render(projects);
 // });
 
+        
 //  REFACTORED INTO "STATE"   //
-var root = document.querySelector('#root');
 
-// Function decleration//
-function navHandler(event){
-    event.preventDefault();
-    render(State[event.target.textContent]); // Must use bracket notation to access an object dynamically//
-}
+var root = document.querySelector('#root');
 
 // State holds infomatio the render function needs to render the page. This is a nested object//
 var State =
-    {
-        'Home': {
-            'links': [ 'Blog', 'Contact', 'Projects' ],
-            'title': 'Portfolio Page of Justin D Lautz'
-        },
-        'Blog': {
-            'links': [ 'Home', 'Contact','Projects' ],
-            'title': 'Welcome to my blog'
-        },
-        'Contact': {
-            'links': [ 'Home', 'Blog','Projects' ],
-            'title': 'Welcome to my contact'
-        },
-        'Projects': {
-            'links': [ 'Home', 'Contact','Blog' ],
-            'title': 'Welcome to my projects'
-        }
-    };
+            {
+                'Home': {
+                    'links': [ 'Home','Blog', 'Contact', 'Projects' ],
+                    'title': 'Portfolio Page of Justin D Lautz'
+                },
+                'Blog': {
+                    'links': [ 'Home','Blog', 'Contact', 'Projects' ],
+                    'title': 'Welcome to my blog'
+                },
+                'Contact': {
+                    'links': [ 'Home','Blog', 'Contact', 'Projects' ],
+                    'title': 'Welcome to my contact'
+                },
+                'Projects': {
+                    'links': [ 'Home','Blog', 'Contact', 'Projects' ],
+                    'title': 'Welcome to my projects'
+                }
+            };
 // Grabs a state object and renders it into the page//
 
 function render(state){
     var links;
     var i = 0;
+        
+    // Function decleration//
+    function navHandler(event){
+        var destination = startCase(event.target.textContent);
+
+        event.preventDefault();
+
+        render(State[destination]); // Must use bracket notation to access an object dynamically//
+    }
+
 
     // Grab each component and updates #root's HTML with the generated HTML that works with State//
     root.innerHTML = `
