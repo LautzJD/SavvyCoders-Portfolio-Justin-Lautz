@@ -16,7 +16,7 @@ import Content from './src/Content';
 import Footer from './src/Footer';
 import { startCase } from 'lodash';
 import * as State from './state';
-import Navigo from 'navigo';
+import Navigo from 'navigo'; // helps client side routing so nav links work!//
 // import nameChecker from './src/Greeter';
 
 var router = new Navigo(location.origin);
@@ -47,4 +47,11 @@ router
 
     .resolve();
 
-// nameChecker();
+// Fetch returns to us a promise//
+// The response that comes from FETCH will fo into the callback function that the "then()" uses"//
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+
+
+// nameChecker()

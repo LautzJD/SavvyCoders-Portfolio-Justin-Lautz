@@ -1,5 +1,5 @@
 
-import { lowerCase } from 'lodash';
+import { lowerCase } from 'lodash'; // lodash is a library of functions//
 
 function linkBuilder(linksArray){
     var linksHTML = linksArray.map((link) => {
