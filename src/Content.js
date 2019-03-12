@@ -1,4 +1,4 @@
-export default function Content(state){
+export default function Content(posts){
     return `
 <div id="content">
 <div>

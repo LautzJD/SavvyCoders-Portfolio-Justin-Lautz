@@ -16,7 +16,7 @@ function linkBuilder(linksArray){
         `;
     }).join(' ');
 
-    console.log(linksHTML);
+    // console.log(linksHTML);//
 
     return linksHTML;
 }
@@ -26,7 +26,7 @@ export default function Navigation(state){
      <div id = "navigation">
 
                 <ul>
-                    ${linkBuilder(state.links)}
+                    ${linkBuilder(state)}
                 </ul>
 
                 <img src="https://i.pinimg.com/originals/e0/c1/7f/e0c17f52e48a1dc98a989c6701b526c5.jpg"

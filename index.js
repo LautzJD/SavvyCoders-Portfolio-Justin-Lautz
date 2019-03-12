@@ -17,6 +17,7 @@ import Footer from './src/Footer';
 import { startCase } from 'lodash';
 import * as State from './state';
 import Navigo from 'navigo'; // helps client side routing so nav links work!//
+import axios from 'axios';
 // import nameChecker from './src/Greeter';
 
 var router = new Navigo(location.origin);
@@ -24,10 +25,29 @@ var root = document.querySelector('#root');
         
 
 function render(state){
+    // If state.links does not contain 'Blog', we are on the 'Blog" page//
+    if(!state.links.includes('Blog')){
+        state.posts = [];
+
+        axios
+            .get('https://jsonplaceholder.typicode.com/posts')
+            .then((response) => {
+                state.posts = response.data;
+                console.log('inside axios call', state.posts);
+                
+                root.innerHTML = `
+                    ${Navigation(state.links)}
+                    ${Header(state.title)}
+                    ${Content(state.posts)}
+                    ${Footer(state)}
+                    `;
+            });
+    }
+
     root.innerHTML = `
-    ${Navigation(state)}
+    ${Navigation(state.links)}
     ${Header(state.title)}
-    ${Content(state)}
+    ${Content(state.posts)}
     ${Footer(state)}
     `;
 }
@@ -47,11 +67,13 @@ router
 
     .resolve();
 
+
 // Fetch returns to us a promise//
 // The response that comes from FETCH will fo into the callback function that the "then()" uses"//
-fetch('https://jsonplaceholder.typicode.com/posts')
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));//Use Axios instead of Fetch!!!//
 
 
 // nameChecker()
