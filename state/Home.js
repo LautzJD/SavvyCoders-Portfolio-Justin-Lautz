@@ -1,4 +1,5 @@
 export default {
-    'links': [ 'Home','Blog', 'Contact', 'Projects' ],
+    'body': 'Home',
+    'links': [ 'Home', 'Blog', 'Contact', 'Projects' ],
     'title': 'Portfolio Page of Justin D Lautz'
 };

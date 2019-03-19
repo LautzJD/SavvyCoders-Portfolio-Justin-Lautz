@@ -29,25 +29,25 @@ function render(state){
     if(!state.links.includes('Blog')){
         state.posts = [];
 
-        axios
-            .get('https://jsonplaceholder.typicode.com/posts')
-            .then((response) => {
-                state.posts = response.data;
-                console.log('inside axios call', state.posts);
+        // axios
+        //     .get('https://jsonplaceholder.typicode.com/posts')
+        //     .then((response) => {
+        //         state.posts = response.data;
+        //         console.log('inside axios call', state);
                 
-                root.innerHTML = `
-                    ${Navigation(state.links)}
-                    ${Header(state.title)}
-                    ${Content(state.posts)}
-                    ${Footer(state)}
-                    `;
-            });
+        //         root.innerHTML = `
+        //             ${Navigation(state.links)}
+        //             ${Header(state.title)}
+        //             ${Content(state)}
+        //             ${Footer(state)}
+        //             `;
+        //     });
     }
 
     root.innerHTML = `
     ${Navigation(state.links)}
     ${Header(state.title)}
-    ${Content(state.posts)}
+    ${Content(state)}
     ${Footer(state)}
     `;
 }
