@@ -1,6 +1,7 @@
 /* eslint-disable vars-on-top */
-/* var name = window.prompt("What's your name");
-window.alert (`Why hello there ${name}`);*/
+// var name = window.prompt("What's your name");
+
+// window.alert(`Why hello there ${name}`);
 
 /* console.log(document.querySelector("#header h1"));
 console.log(document.querySelector("#footer h2"));
@@ -17,8 +18,8 @@ import Footer from './src/Footer';
 import { startCase } from 'lodash';
 import * as State from './state';
 import Navigo from 'navigo'; // helps client side routing so nav links work!//
-import axios from 'axios';
-// import nameChecker from './src/Greeter';
+// import axios from 'axios';
+import nameChecker from './src/Greeter';
 
 var router = new Navigo(location.origin);
 var root = document.querySelector('#root');
@@ -67,7 +68,6 @@ router
 
     .resolve();
 
-
 // Fetch returns to us a promise//
 // The response that comes from FETCH will fo into the callback function that the "then()" uses"//
 
@@ -75,5 +75,4 @@ router
 //     .then((response) => response.json())
 //     .then((json) => console.log(json));//Use Axios instead of Fetch!!!//
 
-
-// nameChecker()
+nameChecker();
