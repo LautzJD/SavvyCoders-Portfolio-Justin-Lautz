@@ -12,28 +12,10 @@ export default function Home(){
     <hr 6px>
     
     <h3>About me</h3>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt, sit aliquam veniam odio
-    necessitatibus accusantium recusandae aperiam, expedita magnam reprehenderit rerum iure facilis
-    distinctio tempora eligendi id ipsam ex optio.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat, velit adipisci excepturi
-    quia blanditiis error omnis sit cum tempora sint beatae aperiam iusto eaque odio laboriosam non rem
-    soluta.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut libero id voluptatibus fugiat unde
-    molestiae nihil, perspiciatis, commodi, ratione temporibus laboriosam eligendi cumque fugit alias?
-    Dolorum provident quia ut architecto?</p>
+    <p>I'm career Forensic Scientist looking to change gears in life and explore the Information Technology sector. Aspiring to utilize newly acquired skills in HTML5, CSS3, JavaScript and WEBAPI construction to obtain a career that will test problem-solving, communication, and programming skills. I am also interested in the business analyst side of profession to help bridge the gap between the technical and the business oriented.</p>
     
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut libero id voluptatibus fugiat unde
-    molestiae nihil, perspiciatis, commodi, ratione temporibus laboriosam eligendi cumque fugit alias?
-    Dolorum provident quia ut architecto?</p>
-    
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut libero id voluptatibus fugiat unde
-    molestiae nihil, perspiciatis, commodi, ratione temporibus laboriosam eligendi cumque fugit alias?
-    Dolorum provident quia ut architecto?</p>
-    
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut libero id voluptatibus fugiat unde
-    molestiae nihil, perspiciatis, commodi, ratione temporibus laboriosam eligendi cumque fugit alias?
-    Dolorum provident quia ut architecto?</p>
-    
+    <p>Savvy Coders Capstone Project: A simple web application based on HTML, CSS and JavaScript that follows a single web page application strategy and will connect out of town sports fans with sports bars / restaurants in their current city that attracts like-minded fans. Location data will be accessed by a web API that was created specifically for this project and hosted online utilizing MYJSON. </p>
+
     <hr 6px>
 
     <h3>Technical Skills Matrix</h3>
