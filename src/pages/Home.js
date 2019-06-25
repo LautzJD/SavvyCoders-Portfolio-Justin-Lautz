@@ -1,6 +1,6 @@
 export default function Home(){
     return `
-    <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/37201573_10213743292708809_6614595406477131776_n.jpg?_nc_cat=105&_nc_oc=AQmdCwOG8sZ-NQTKwbA-tYJy4Y73-IByC6wSypnmJShMthkqTyxYRvKIQc0XeSoatxo&_nc_ht=scontent-ort2-2.xx&oh=5e152e22aeeb65b3f63c39e8cdd597a6&oe=5CEC5B8A"
+    <img src="https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/37201573_10213743292708809_6614595406477131776_n.jpg?_nc_cat=105&_nc_oc=AQnilxJL6BymVaODvzege_YgMacxp7qcyYm4Q-RFYubTC5Py-krK-MOsHEUkYdFe2rg&_nc_ht=scontent-ort2-2.xx&oh=a18beab29914c86a2b62a0c8fcb804dc&oe=5D8A8F8A"
         alt="JDL HeadShot">
 
    <!--<figure>
