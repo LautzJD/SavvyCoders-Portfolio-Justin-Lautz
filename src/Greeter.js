@@ -2,6 +2,7 @@ var name;
 
 function blankChecker(){
     if(name === ''){
+        // or use !name = checks if its a falsey statement//
         name = window.prompt("Seriously, what's your name?");
         blankChecker(); /* RECURSION*/
     }
